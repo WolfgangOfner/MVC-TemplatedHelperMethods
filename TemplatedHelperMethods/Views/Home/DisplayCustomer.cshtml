@@ -1,0 +1,34 @@
+﻿@model TemplatedHelperMethods.Models.Customer
+
+@{
+    Layout = null;
+    ViewBag.Title = "DisplayPerson";
+    Html.EnableClientValidation(false);
+}
+
+<style>
+    body {
+        padding: 2em;
+    }
+</style>
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+<h2>Display customer</h2>
+
+<label class="col-md-1">Customer Id</label>
+@Html.EditorFor(x => x.CustomerId)
+
+<br />
+<label class="col-md-1">First Name</label>
+@Html.EditorFor(x => x.FirstName)
+
+<br />
+<label class="col-md-1">Last Name</label>
+@Html.EditorFor(x => x.LastName)
+
+<br />
+<label class="col-md-1">Birthday</label>
+@Html.EditorFor(x => x.Birthday)
+
+
